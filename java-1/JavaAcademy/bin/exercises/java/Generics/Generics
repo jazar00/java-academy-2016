@@ -1,0 +1,10 @@
+
+	//eliminate the casts
+	List list = new ArrayList();
+	list.add("hello");
+	String s = (String) list.get(0);
+
+	//code without casts
+	List<String> list = new ArrayList<String>();
+	list.add("hello");
+	String s = list.get(0);
