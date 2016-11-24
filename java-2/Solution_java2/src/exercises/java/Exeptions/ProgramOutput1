@@ -1,0 +1,20 @@
+	try{ 
+		int x = 0; 
+		int y = 5 / x; 
+	} 
+	catch (Exception e){
+		System.out.println("Exception"); 
+	} 
+	catch (ArithmeticException ae){
+		System.out.println(" Arithmetic Exception"); 
+	} 
+	System.out.println("finished");
+
+A. finished
+B. Exception
+C. Compilation fails.
+D. Arithmetic Exception
+
+// option C - Compilation fails 
+   the order of the exceptions is wrong, specific ones such as ArithmeticException should go before Exeption
+   

@@ -1,0 +1,10 @@
+	set names = new …();
+	names.add("Jake");
+	names.add("Robert");
+	names.add("Marisa");
+	names.add("Kasey");
+	System.out.println(names);
+	
+//If using a Hashset, the elements in "names" will be printed in random order
+//If using a Treeset, the elements in "names" will be printed in order, in this case, alphabetically
+//If using a LinkedHashset the, the elements in "names" will be printed by order of insertion into the set

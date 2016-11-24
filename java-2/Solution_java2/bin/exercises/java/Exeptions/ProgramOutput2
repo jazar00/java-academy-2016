@@ -1,0 +1,18 @@
+public class MyProgram{
+
+	public static void main(String args[]){
+		try{
+			System.out.print("Hello world ");
+		}
+		finally{
+			System.out.println("Finally executing ");
+		}
+	}
+}
+
+A. Nothing. The program will not compile because no exceptions are specified.
+B. Nothing. The program will not compile because no catch clauses are specified.
+C. Hello world.
+D. Hello world Finally executing
+
+//it will print "Hello world" and "Finally executing" because finally blocks always execute

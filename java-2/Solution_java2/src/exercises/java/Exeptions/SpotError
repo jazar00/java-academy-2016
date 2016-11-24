@@ -1,0 +1,21 @@
+import java.io.*;
+public class test {
+
+	public static void main(String[] args) {
+	
+	try {
+	FileReader fr = new FileReader("data.txt");
+	}
+	catch(IOException e){
+	}
+	
+	try {
+	fr.close();
+	}
+	catch(IOException e){}
+	}
+}
+
+//the variable fr is not declared in a class or method scope, so it is not visible outside 
+  of the try block where it is declared
+so 

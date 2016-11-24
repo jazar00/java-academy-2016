@@ -1,0 +1,8 @@
+	Set grades = new HashSet();
+	//using a for each should do the work
+	
+	set<int> grades = new HashSet<int>();
+	
+	for (double grade : grades) {
+		System.out.println("grade: " + grade);
+	}
