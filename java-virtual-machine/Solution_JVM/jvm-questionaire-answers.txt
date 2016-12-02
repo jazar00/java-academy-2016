@@ -1,0 +1,39 @@
+In your own words what is the JVM?
+It is an execution enviroment that translates java binary code into machine laguage and executes it. It also makes
+possible to run java code in almost any platform.
+
+What about JIT? What is it?
+Java Just-In-Time is a compiler that takes class files and compiles them at runtime to turn them into an optimized machine code
+
+How can you execute GC?
+With System.gc(); or System.runFinalization();
+
+What are the downsides of GC?
+It has an impact on performance
+It adds overheads for object tracking, 
+It can cause long periods of pause while executing
+
+In few words what can you say about the heap space?
+Is a space that is created when the JVM starts, in this space is where java objects reside, and when it it ful GC starts
+
+What about PermGen? How to increase?
+PermGen is a space to keep information abut the loaded clsasses and other features like Strings, The more classes you add, the less PermGen space you will have and that can lead to some OutOfSpace errors
+To increase the PermGen space in eclipse you can edit the ecplipse.ini -XX:MaxPermSize=256m to increase the amount of memory dedicated to PermGen
+
+How to increase Java heap?
+You can use Xms<size> to set initial Java heap size and Xmx<size> to set maximum Java heap size
+
+Explain Hotspot Heap structure
+It has 3 elements
+Young Generation: space where new ojects are created and short lived objects reside
+Old Generation: space where objects that survived GC from young generation reside and wait to be collected
+Permanent Generation: space that contains permanent class metadata
+
+Give two scenarios where you can get an OutOfMemoryError error
+when too many classes or too ig classes re loaded to the PermGen
+when GC fails to recognize objects that are no longer used
+
+How can VM technology be beneficial for slow programs?
+VMs can help with the reduction of input bottlenecks
+VMs increase resource utilization
+Vms helps with a faster recovery times after failure
